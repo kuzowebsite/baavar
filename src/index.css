@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Хэрэв танд нэмэлт фонт эсвэл стиль байгаа бол доор нь бичиж болно */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: 200%; /* Хоёр давхарлаж тасралтгүй харагдуулна */
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-pattern {
+  display: flex;
+  width: 200%; /* Хоёр давхарлаж тасралтгүй харагдуулна */
+  animation: scroll-right 25s linear infinite;
+}
+
